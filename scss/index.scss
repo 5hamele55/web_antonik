@@ -1,6 +1,17 @@
 @import "breakpoints";
 @import "variables";
 
+.hero__button {
+  @include xs {
+    margin: 20px auto;
+  }
+  @include sm {
+    margin: 20px auto;
+  }
+  @include md {
+    margin-left: 10%;
+  }
+}
 .hero {
   @include section($main-color);
   @include xs {

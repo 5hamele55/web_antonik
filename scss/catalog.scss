@@ -1,0 +1,63 @@
+@import "breakpoints";
+@import "variables";
+
+ strong {
+  color: $white-color;
+ }
+.racks {
+  @include section($main-color);
+  @include xl {
+    height: calc(100vh - 80px);
+  }
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  .racks__info-container {
+    @include container;
+    flex-direction: column;
+    margin-bottom: 20px;
+    .racks__title {
+      @include title;
+    }
+    .racks__content {
+      color: $white-color;
+    }
+  }
+  .racks__container {
+    @include container;
+    .racks__list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 30px;
+      width: 100%;
+      .racks__item {
+        width: 300px;
+        .racks__item-link {
+          .racks__item-img {
+            width: 100%;
+            max-height: 236px;
+            position: relative;
+            z-index: 0;
+          }
+        }
+        .racks__item-title, .racks__item-text {
+          color: $white-color;
+        }
+        .racks__item-title {
+          position: relative;
+          margin-left: 50px;
+          transition: all 0.5s;
+          &::after {
+            @include dash;
+          }
+        }
+        &:hover .racks__item-title {
+          color: $acsent-color;
+        }
+      }
+    }
+  }
+}

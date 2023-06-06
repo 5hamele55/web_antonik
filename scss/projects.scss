@@ -1,0 +1,37 @@
+@import "breakpoints";
+@import "variables";
+
+.complited {
+  @include section($main-color);
+  height: 100vh;
+  .complited__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .complited__title {
+      @include title;
+      color: $white-color;
+    }
+    .complited__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+      .complited__item {
+        width: 350px;
+        img {
+          width: 100%;
+          max-height: 275px;
+          border-bottom: 10px solid $acsent-color;
+          transition: all 0.5s;
+        }
+        &:hover img {
+          border-bottom: 10px solid transparent;
+        }
+      }
+    }
+  }
+}

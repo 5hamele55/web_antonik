@@ -27,22 +27,6 @@
   background: #F7F7F7;
 }
 
-@media (max-width: 575px) {
-  .hero__button {
-    margin: 20px auto;
-  }
-}
-@media (min-width: 576px) {
-  .hero__button {
-    margin: 20px auto;
-  }
-}
-@media (min-width: 768px) {
-  .hero__button {
-    margin-left: 10%;
-  }
-}
-
 html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -75,6 +59,9 @@ html, body {
 }
 
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #303841;
   height: 80px;
   width: 100%;

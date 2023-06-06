@@ -28,17 +28,6 @@
     background: $white-color;
   }
 }
-.hero__button {
-  @include xs {
-    margin: 20px auto;
-  }
-  @include sm {
-    margin: 20px auto;
-  }
-  @include md {
-    margin-left: 10%;
-  }
-}
 html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -64,6 +53,9 @@ html, body {
   }
 }
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $main-color;
   height: 80px;
   width: 100%;
