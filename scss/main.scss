@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&display=swap');
+@import "breakpoints";
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat',Arial, sans-serif;
+  font-size: 18px;
+  color: $main-color;
+}
+.button {
+  background-color: $acsent-color;
+  width: 200px;
+  height: 50px;
+  border: 3px solid $acsent-color;
+  margin: 20px auto;
+  transition: all 0.5s;
+  a {
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $main-color;
+    display: block;
+  }
+  &:hover {
+    background: $white-color;
+  }
+}
+.hero__button {
+  @include xs {
+    margin: 20px auto;
+  }
+  @include sm {
+    margin: 20px auto;
+  }
+  @include md {
+    margin-left: 10%;
+  }
+}
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.logo {
+  text-transform: uppercase;
+  color: $acsent-color;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  border: 2px solid $acsent-color;
+  padding: 0 5px;
+}
+.phone-link {
+  @include xs {
+    pointer-events: all;
+  }
+  @include sm {
+    pointer-events: all;
+  }
+  @include md {
+    pointer-events: none;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: $main-color;
+  height: 80px;
+  width: 100vw;
+  .header__container {
+    position: relative;
+    @include container;
+    align-items: center;
+    justify-content: space-between;
+    .header__logo {
+      margin-left: 20px;
+    }
+    .hamburger {
+      width: 40px;
+      height: 40px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      @include xs {
+        display: flex;
+      }
+      @include sm {
+        display: flex;
+      }
+      @include md {
+        display: none;
+      }
+      .line {
+        margin: 3px;
+        width: 25px;
+        height: 1px;
+        background-color: $white-color;
+        transition: all 0.3s ease;
+      }
+    }
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .toggle .line2 {
+      opacity: 0;
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -5px);
+    }
+    .header__nav {
+      z-index: 3;
+      transition: all 0.3s ease-in;
+      background-color: $main-color;
+      @include xs {
+        width: 70%;
+        transform: translateX(100%);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        height: calc(100vh - 80px);
+      }
+      @include sm {
+        transform: translateX(100%);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        height: calc(100vh - 80px);
+        width: 50%;
+      }
+      @include md {
+        position: static;
+        transform: translateX(0);
+        height: 100%;
+        width: initial;
+      }
+      .header__nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        @include xs {
+          flex-direction: column;
+        }
+        @include sm {
+          flex-direction: column;
+        }
+        @include md {
+          flex-direction: row;
+        }
+        .nav-list__item {
+          list-style: none;
+          transition: all 0.5s;
+          @include xs {
+            opacity: 0;
+            margin-bottom: 30px;
+          }
+          @include sm {
+            opacity: 0;
+            margin-bottom: 30px;
+          }
+          @include md {
+            opacity: 1;
+            margin-bottom: 0;
+          }
+          a {
+            text-decoration: none;
+            color: $white-color;
+            text-transform: uppercase;
+            white-space: nowrap;
+          }
+          a::after {
+            content: "";
+            width: 0%;
+            height: 1px;
+            display: block;
+            background-color: $acsent-color;
+            transition: all 0.5s;
+          }
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+          &:hover{
+            transform: translateY(-5px);
+          }
+          &:hover a::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .nav-active {
+      transform: translateX(0%);
+    }
+    }
+  }
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.cooperation {
+  @include section($white-color);
+  height: 100vh;
+  .cooperation__container {
+    @include container;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    @include sm {
+      flex-direction: column;
+    }
+    @include xs {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: row;
+    }
+    .cooperation__info {
+      @include sm {
+        flex-direction: column;
+        width: 90%;
+      }
+      @include xs {
+        flex-direction: column;
+        width: 90%;
+      }
+      @include md {
+        width: 60%;
+      }
+      .cooperation__title {
+        @include title;
+        color: $main-color;
+        }
+      .cooperation__description {
+        font-size: 26px;
+        text-align: center;
+        line-height: 1.5em;
+        @include sm {
+          font-size: 20px;
+        }
+        @include xs {
+          font-size: 20px;
+        }
+        @include md {
+          font-size: 26px;
+        }
+        span{
+          font-size: inherit;
+          font-weight: 700;
+        }
+        }
+        .cooperation__phone {
+          font-size: inherit;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        .cooperation__map {
+          width: 90%;
+          margin: 20px auto;
+          height: 250px;
+          background-image: url("../img/map.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+        }
+    }
+    .cooperation__form {
+      display: flex;
+      flex-direction: column;
+      @include sm {
+        width: 90%;
+      }
+      @include xs {
+        width: 90%;
+      }
+      @include md {
+        width: 40%;
+      }
+      input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 30px;
+        width: 300px;
+        margin: 20px auto;
+        background-color: $white-color;
+        border-bottom: 2px solid $main-color;
+        transition: all 0.5s;
+        @include sm {
+          width: 260px;
+        }
+        @include xs {
+          width: 260px;
+        }
+        @include md {
+          width: 300px;
+        }
+        &:focus {
+          border-color: $acsent-color;
+          box-shadow: 0 0 5px $acsent-color;
+        }
+      }
+      .form__button {
+        background-color: $acsent-color;
+        width: 200px;
+        height: 50px;
+        border: 3px solid $acsent-color;
+        margin: 20px auto;
+        transition: all 0.5s;
+        text-align: center;
+        font-weight: 700;
+        color: $main-color;
+        cursor: pointer;
+        font-style: normal;
+      &:hover {
+        background: $white-color;
+      }
+      }
+    }
+  }
+}
+
+.scroll-up a {
+  font-size: 36px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  background-color: $acsent-color;
+  color: $white-color;
+  border-radius: 50% 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $main-color;
+  }
+}
+.footer {
+  @include section($main-color);
+  padding: 0;
+  @include lg {
+    height: auto;
+  }
+  flex-direction: column;
+  align-items: center;
+  .footer__container {
+    margin: 40px 0;
+    @include container;
+    justify-content: space-around;
+    @include xs {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 30px;
+    }
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 30px;
+    }
+    @include md {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 0px;
+    }
+    .footer__company {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      .footer__company-description {
+        margin-top: 10px;
+        color: $white-color;
+      }
+    }
+    .footer__category {
+      @include xs {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+      @include sm {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+      @include sm {
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
+      width: 270px;
+      .footer__category-title {
+        border-bottom: 2px solid $acsent-color;
+        margin-bottom: 10px;
+        color: $white-color;
+      }
+      .footer__link {
+        margin-bottom: 5px;
+        list-style: none;
+        a {
+          white-space: nowrap;
+          color: $white-color;
+          text-decoration: none;
+          transition: all 0.5s;
+          &:hover {
+            color: $acsent-color;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    border-top: 2px solid $acsent-color;
+    text-align: center;
+    width: 100%;
+    color: $white-color;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,280 @@
+@import "breakpoints";
+@import "variables";
+
+.hero {
+  @include section($main-color);
+  @include xs {
+    padding: 0 0 40px 0;
+  }
+  @include sm {
+    padding: 0 0 40px 0;
+  }
+  @include md {
+    height: calc(100vh - 80px);
+  }
+  .hero__container {
+    @include container;
+    position: relative;
+    .hero__image-container {
+      @include xs {
+        display: none;
+      }
+      @include sm {
+        display: none;
+      }
+      @include lg {
+        display: block;
+        position: absolute;
+        max-width: 800px;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        z-index: 0;
+      }
+      img {
+        width: 100%;
+        filter: brightness(80%);
+      }
+    }
+    .hero__about{
+      @include xs {
+        padding: 10px;
+        position: static;
+        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../img/Stelazhi-metalevi.jpg") no-repeat;
+        background-size: cover;
+      }
+      @include sm {
+        padding: 40px;
+        position: static;
+        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../img/Stelazhi-metalevi.jpg") no-repeat;
+        background-size: cover;
+      }
+      @include lg {
+        padding: 0;
+        background: none;
+        position: absolute;
+        top: 20%;
+        left: 20px;
+        z-index: 1;
+      }
+      .hero__title {
+        @include xs {
+          color: $white-color;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        @include sm {
+          color: $white-color;
+          font-weight: bold;
+          font-size: 36px;
+        }
+        @include lg {
+          font-size: 50px;
+          max-width: 850px;
+        }
+      }
+      .hero__subtitle {
+        margin: 20px 0 20px 50px;
+        color: $acsent-color;
+        font-weight: 700;
+        position: relative;
+        &::before {
+          @include dash
+        }
+      }
+      .hero__content {
+        @include xs {
+          font-size: 18px;
+          max-width: 400px;
+          color: $white-color;
+        }
+        @include sm {
+          font-size: 20px;
+          max-width: 400px;
+          color: $white-color;
+        }
+        @include lg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.benefits {
+  @include section($white-color);
+  height: 100vh;
+  .benefits__container{
+    @include container;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    .benefits__title {
+      @include title;
+      color: $main-color;
+    }
+    .benefits__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 50px;
+      .benefits__item {
+        width: 240px;
+        height: 50px;
+        padding-left: 60px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .experience-item {
+        background-image: url("../img/icons/icon-experience.png");
+      }
+      .shop-item {
+        background-image: url("../img/icons/icon-market.png");
+      }
+      .factory-item {
+        background-image: url("../img/icons/icon-factory.png");
+      }
+      .project-item {
+        background-image: url("../img/icons/icon-project.png");
+      }
+      .place-item {
+        background-image: url("../img/icons/icon-land.svg");
+      }
+      .saving-item {
+        background-image: url("../img/icons/icon-saving.png");
+      }
+    }
+    .why-we__title {
+      @include subtitle;
+      color: $main-color;
+      margin-top: 30px;
+    }
+    .why-we {
+      .why-we__item {
+        list-style-image: url("../img/icons/icon-done.svg");
+        list-style-position: inside;
+        padding-left: 20px;
+      }
+    }
+  }
+  
+}
+.racks {
+  @include section($main-color);
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  .racks__title {
+    @include title;
+  }
+  .racks__container {
+    @include container;
+    .racks__list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 30px;
+      width: 100%;
+      .racks__item {
+        width: 300px;
+        .racks__item-link {
+          .racks__item-img {
+            width: 100%;
+            max-height: 236px;
+            position: relative;
+            z-index: 0;
+          }
+        }
+        .racks__item-title, .racks__item-text {
+          color: $white-color;
+        }
+        .racks__item-title {
+          position: relative;
+          margin-left: 50px;
+          transition: all 0.5s;
+          &::after {
+            @include dash;
+          }
+        }
+        &:hover .racks__item-title {
+          color: $acsent-color;
+        }
+      }
+    }
+  }
+}
+
+.woking-with {
+  @include section($white-color);
+  .working-with__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .working-with__title{
+      @include title;
+      color: $main-color;
+    }
+    .working-with__list {
+      display: flex;
+      justify-content: space-around;
+      gap: 50px;
+      width: 100%;
+      flex-wrap: wrap;
+      .working-with__list-item {
+        list-style: none;
+        
+        @include xs {
+          width: 200px;
+        }@include sm {
+          width: 200px;
+        }
+        @include xl {
+          width: 220px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.complited {
+  @include section($main-color);
+  height: 100vh;
+  .complited__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .complited__title {
+      @include title;
+      color: $white-color;
+    }
+    .complited__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+      .complited__item {
+        width: 350px;
+        img {
+          width: 100%;
+          max-height: 275px;
+          border-bottom: 10px solid $acsent-color;
+          transition: all 0.5s;
+        }
+        &:hover img {
+          border-bottom: 10px solid transparent;
+        }
+      }
+    }
+  }
+}

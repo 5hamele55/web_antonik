@@ -1,0 +1,84 @@
+@import "breakpoints";
+
+$main-color: #303841;
+$secondary-color:#2E4750;
+$acsent-color:#F6C90E;
+$white-color:#F7F7F7;
+
+$title-size-lg: 50px;
+$title-size-sm: 28px;
+$subtitle-size-lg: 28px;
+$subtitle-size-sm: 20px;
+
+$box-shadow: 0 0 2px $main-color;
+
+@mixin title {
+  font-size: $title-size-lg;
+  font-weight: bold;
+  color: $white-color;
+  margin: 0 5px 30px;
+  text-align: center;
+  @include sm {
+    font-size: $title-size-sm;
+  }
+  @include xs {
+    font-size: $title-size-sm;
+  }
+}
+@mixin subtitle {
+  font-size: $subtitle-size-lg;
+  font-weight: bold;
+  color: $white-color;
+  margin: 0 5px 15px;
+  text-align: center;
+  @include sm {
+    font-size: $subtitle-size-sm;
+  }
+  @include xs {
+    font-size: $title-size-sm;
+  }
+}
+@mixin dash {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: $acsent-color;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+  }
+  @mixin container {
+    display: flex;
+    width: 100%;
+    @include xs {
+      min-width: 320px;
+    }
+    @include sm {
+      max-width: 559px; 
+    }
+    @include md {
+      max-width: 767px;
+    }
+    @include lg {
+      max-width: 991px;
+    }
+    @include xl {
+      max-width: 1200px;
+    }
+  }
+  @mixin section ($color) {
+    display: flex;
+    justify-content: center;
+    background-color: $color;
+    padding: 40px 0;
+    @include xs {
+      height: auto;
+    }
+    @include sm {
+      height: auto;
+    }
+    @include lg {
+      height: 100vh;
+    }
+  }

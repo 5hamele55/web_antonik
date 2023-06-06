@@ -1,0 +1,27 @@
+@import "breakpoints";
+@import "variables";
+
+.about {
+  @include section($main-color);
+  @include lg {
+    height: calc(100vh - 80px);
+  }
+  .about__container {
+    @include container;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../img/factory.jpg") no-repeat;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    .about__title {
+      @include title;
+      color: $white-color;
+    }
+    .about__content {
+      color: $white-color;
+      padding: 0 40px;
+    }
+  }
+}
