@@ -151,6 +151,7 @@ html, body {
   .header .header__container .header__nav {
     width: 70%;
     transform: translateX(100%);
+    opacity: 0;
     position: absolute;
     top: 80px;
     right: 0;
@@ -160,6 +161,7 @@ html, body {
 @media (min-width: 576px) {
   .header .header__container .header__nav {
     transform: translateX(100%);
+    opacity: 0;
     position: absolute;
     top: 80px;
     right: 0;
@@ -245,6 +247,7 @@ html, body {
 }
 .header .header__container .nav-active {
   transform: translateX(0%);
+  opacity: 1;
 }
 
 @keyframes navLinkFade {
