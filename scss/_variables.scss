@@ -48,37 +48,37 @@ $box-shadow: 0 0 2px $main-color;
     top: 10px;
     left: -50px;
   }
-  @mixin container {
-    display: flex;
-    width: 100%;
-    @include xs {
-      min-width: 320px;
-    }
-    @include sm {
-      max-width: 559px; 
-    }
-    @include md {
-      max-width: 767px;
-    }
-    @include lg {
-      max-width: 991px;
-    }
-    @include xl {
-      max-width: 1200px;
-    }
+@mixin container {
+  display: flex;
+  width: 100%;
+  @include xs {
+    min-width: 320px;
   }
-  @mixin section ($color) {
-    display: flex;
-    justify-content: center;
-    background-color: $color;
-    padding: 40px 0;
-    @include xs {
-      height: auto;
-    }
-    @include sm {
-      height: auto;
-    }
-    @include lg {
-      height: 100vh;
-    }
+  @include sm {
+    max-width: 559px; 
   }
+  @include md {
+    max-width: 767px;
+  }
+  @include lg {
+    max-width: 991px;
+  }
+  @include xl {
+    max-width: 1200px;
+  }
+}
+@mixin section ($color) {
+  display: flex;
+  justify-content: center;
+  background-color: $color;
+  padding: 40px 0;
+  @include xs {
+    height: auto;
+  }
+  @include sm {
+    height: auto;
+  }
+  @include lg {
+    height: 100vh;
+  }
+}

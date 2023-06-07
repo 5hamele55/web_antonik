@@ -176,6 +176,7 @@ html, body {
     height: 100%;
     width: initial;
     margin-right: 10px;
+    opacity: 1;
   }
 }
 .header .header__container .header__nav .header__nav-list {
@@ -484,9 +485,11 @@ html, body {
   border-radius: 50% 50%;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: 2px solid #303841;
 }
 .scroll-up a:hover {
   color: #303841;
+  border: 2px solid #F7F7F7;
 }
 
 .footer {

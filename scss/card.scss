@@ -1,0 +1,93 @@
+@import "breakpoints";
+@import "variables";
+
+.cards {
+  @include section($main-color);
+  @include lg {
+    height: auto;
+  }
+  .cards__container {
+    @include container;
+    flex-direction: column;
+    .cards__title {
+      color: $white-color;
+      @include title;
+    }
+    .card__characteristics {
+      margin-bottom: 20px;
+      .card__characteristics-title {
+        @include subtitle;
+        color: $acsent-color;
+      }
+      .card__characteristics-content {
+        color: $white-color;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .card__characteristics-item {
+        .card__characteristics-item-title {
+          color: $white-color;
+          white-space: nowrap;
+        }
+        .card__characteristics-item-content {
+          color: $white-color;
+          white-space: nowrap;
+        }
+      }
+    }
+    .cards__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      .card {
+        display: flex;
+        gap: 30px;
+        margin: 20px 0;
+        max-width: 555px;
+      .card__image {
+        width: calc(106px*1.5);
+        height: calc(200px*1.5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+      .card__content {
+        display: flex;
+        flex-direction: column;
+        .card__content-title {
+          color: $acsent-color;
+        }
+        .card__description {
+          .card__description-title {
+            color: $white-color;
+          }
+          .card__description-content {
+            color: $white-color;
+          }
+          .card__description-configuration {
+            .card__description-configuration-item {
+              color: $white-color;
+            }
+          }
+          .card__description-prices {
+            color: $white-color;
+            font-weight: 700;
+          }
+          .card__description-btn {
+            margin: 10px 0;
+          }
+        }
+      }
+      }
+    }
+  }
+}
+
+.card__image-1 {
+  background-image: url("../img/metal/stelazh-universalnij-STR-1.jpg");
+}
+.card__image-2 {
+  background-image: url("../img/metal/stelazh-konditerskij.jpg");
+}
