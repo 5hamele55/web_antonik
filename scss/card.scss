@@ -8,10 +8,15 @@
   }
   .cards__container {
     @include container;
+    padding: 10px;
     flex-direction: column;
     .cards__title {
       color: $white-color;
       @include title;
+    }
+    .cards__content {
+      color: $white-color;
+      padding-bottom: 10px;
     }
     .card__characteristics {
       margin-bottom: 20px;
@@ -20,63 +25,77 @@
         color: $acsent-color;
       }
       .card__characteristics-content {
-        color: $white-color;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
+        text-align: center;
       }
       .card__characteristics-item {
         .card__characteristics-item-title {
           color: $white-color;
-          white-space: nowrap;
+          padding: 0 10px;
         }
         .card__characteristics-item-content {
           color: $white-color;
-          white-space: nowrap;
+          padding: 0 10px;
         }
       }
     }
     .cards__list {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       .card {
         display: flex;
-        gap: 30px;
+        gap: 20px;
         margin: 20px 0;
         max-width: 555px;
+        @include xs {
+          flex-direction: column;
+        }
+        @include sm {
+          flex-direction: row;
+        }
       .card__image {
         width: calc(106px*1.5);
         height: calc(200px*1.5);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: center;
+        margin: 0 auto;
       }
       .card__content {
         display: flex;
         flex-direction: column;
         .card__content-title {
           color: $acsent-color;
+          padding: 0 10px;
         }
         .card__description {
           .card__description-title {
             color: $white-color;
+            padding: 0 10px;
           }
           .card__description-content {
             color: $white-color;
+            padding: 0 10px;
           }
           .card__description-configuration {
             .card__description-configuration-item {
               color: $white-color;
+              padding: 0 10px;
+              list-style: inside;
             }
           }
           .card__description-prices {
             color: $white-color;
             font-weight: 700;
+            padding: 0 10px;
           }
           .card__description-btn {
             margin: 10px 0;
+            @include xs {
+              margin: 10px auto;
+            }
+            @include sm {
+              margin: 10px;
+            }
           }
         }
       }
