@@ -1,9 +1,9 @@
 @import "breakpoints";
 @import "variables";
 
- strong {
+strong {
   color: $white-color;
- }
+}
 .racks {
   @include section($main-color);
   @include xl {
@@ -22,6 +22,7 @@
     }
     .racks__content {
       color: $white-color;
+      padding: 10px;
     }
   }
   .racks__container {
@@ -43,7 +44,8 @@
             z-index: 0;
           }
         }
-        .racks__item-title, .racks__item-text {
+        .racks__item-title,
+        .racks__item-text {
           color: $white-color;
         }
         .racks__item-title {

@@ -82,6 +82,7 @@ strong {
 }
 .racks .racks__info-container .racks__content {
   color: #f7f7f7;
+  padding: 10px;
 }
 .racks .racks__container {
   display: flex;
@@ -129,7 +130,8 @@ strong {
   position: relative;
   z-index: 0;
 }
-.racks .racks__container .racks__list .racks__item .racks__item-title, .racks .racks__container .racks__list .racks__item .racks__item-text {
+.racks .racks__container .racks__list .racks__item .racks__item-title,
+.racks .racks__container .racks__list .racks__item .racks__item-text {
   color: #f7f7f7;
 }
 .racks .racks__container .racks__list .racks__item .racks__item-title {

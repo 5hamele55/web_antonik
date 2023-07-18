@@ -129,11 +129,12 @@
 
   .cards__container {
     @include container;
-    padding: 10px;
+    margin: 0 auto;
 
     .cards__list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
       .card {
         display: flex;

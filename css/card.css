@@ -196,7 +196,7 @@
 .cards .cards__container {
   display: flex;
   width: 100%;
-  padding: 10px;
+  margin: 0 auto;
 }
 @media (max-width: 575px) {
   .cards .cards__container {
@@ -226,6 +226,7 @@
 .cards .cards__container .cards__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .cards .cards__container .cards__list .card {
   display: flex;
