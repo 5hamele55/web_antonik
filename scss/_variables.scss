@@ -1,9 +1,9 @@
 @import "breakpoints";
 
 $main-color: #303841;
-$secondary-color:#2E4750;
-$acsent-color:#F6C90E;
-$white-color:#F7F7F7;
+$secondary-color: #2e4750;
+$acsent-color: #f6c90e;
+$white-color: #f7f7f7;
 
 $title-size-lg: 50px;
 $title-size-sm: 28px;
@@ -39,15 +39,15 @@ $box-shadow: 0 0 2px $main-color;
   }
 }
 @mixin dash {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: $acsent-color;
-    position: absolute;
-    top: 10px;
-    left: -50px;
-  }
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: $acsent-color;
+  position: absolute;
+  top: 10px;
+  left: -50px;
+}
 @mixin container {
   display: flex;
   width: 100%;
@@ -55,7 +55,7 @@ $box-shadow: 0 0 2px $main-color;
     min-width: 320px;
   }
   @include sm {
-    max-width: 559px; 
+    max-width: 559px;
   }
   @include md {
     max-width: 767px;
@@ -67,7 +67,7 @@ $box-shadow: 0 0 2px $main-color;
     max-width: 1200px;
   }
 }
-@mixin section ($color) {
+@mixin section($color) {
   display: flex;
   justify-content: center;
   background-color: $color;

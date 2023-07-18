@@ -134,14 +134,14 @@
 }
 @media (max-width: 575px) {
   .hero .hero__container .hero__about .hero__title {
-    color: #F7F7F7;
+    color: #f7f7f7;
     font-weight: bold;
     font-size: 30px;
   }
 }
 @media (min-width: 576px) {
   .hero .hero__container .hero__about .hero__title {
-    color: #F7F7F7;
+    color: #f7f7f7;
     font-weight: bold;
     font-size: 36px;
   }
@@ -154,7 +154,7 @@
 }
 .hero .hero__container .hero__about .hero__subtitle {
   margin: 20px 0 20px 50px;
-  color: #F6C90E;
+  color: #f6c90e;
   font-weight: 700;
   position: relative;
 }
@@ -163,7 +163,7 @@
   display: block;
   width: 40px;
   height: 3px;
-  background-color: #F6C90E;
+  background-color: #f6c90e;
   position: absolute;
   top: 10px;
   left: -50px;
@@ -172,14 +172,14 @@
   .hero .hero__container .hero__about .hero__content {
     font-size: 18px;
     max-width: 400px;
-    color: #F7F7F7;
+    color: #f7f7f7;
   }
 }
 @media (min-width: 576px) {
   .hero .hero__container .hero__about .hero__content {
     font-size: 20px;
     max-width: 400px;
-    color: #F7F7F7;
+    color: #f7f7f7;
   }
 }
 @media (min-width: 992px) {
@@ -191,7 +191,7 @@
 .benefits {
   display: flex;
   justify-content: center;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 40px 0;
   height: 100vh;
 }
@@ -245,7 +245,7 @@
 .benefits .benefits__container .benefits__title {
   font-size: 50px;
   font-weight: bold;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0 5px 30px;
   text-align: center;
   color: #303841;
@@ -295,7 +295,7 @@
 .benefits .benefits__container .why-we__title {
   font-size: 28px;
   font-weight: bold;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0 5px 15px;
   text-align: center;
   color: #303841;
@@ -344,7 +344,7 @@
 .racks .racks__title {
   font-size: 50px;
   font-weight: bold;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0 5px 30px;
   text-align: center;
 }
@@ -404,8 +404,9 @@
   position: relative;
   z-index: 0;
 }
-.racks .racks__container .racks__list .racks__item .racks__item-title, .racks .racks__container .racks__list .racks__item .racks__item-text {
-  color: #F7F7F7;
+.racks .racks__container .racks__list .racks__item .racks__item-title,
+.racks .racks__container .racks__list .racks__item .racks__item-text {
+  color: #f7f7f7;
 }
 .racks .racks__container .racks__list .racks__item .racks__item-title {
   position: relative;
@@ -417,19 +418,19 @@
   display: block;
   width: 40px;
   height: 3px;
-  background-color: #F6C90E;
+  background-color: #f6c90e;
   position: absolute;
   top: 10px;
   left: -50px;
 }
 .racks .racks__container .racks__list .racks__item:hover .racks__item-title {
-  color: #F6C90E;
+  color: #f6c90e;
 }
 
 .woking-with {
   display: flex;
   justify-content: center;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 40px 0;
 }
 @media (max-width: 575px) {
@@ -483,7 +484,7 @@
 .woking-with .working-with__container .working-with__title {
   font-size: 50px;
   font-weight: bold;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0 5px 30px;
   text-align: center;
   color: #303841;
@@ -584,10 +585,10 @@
 .complited .complited__container .complited__title {
   font-size: 50px;
   font-weight: bold;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0 5px 30px;
   text-align: center;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 @media (min-width: 576px) {
   .complited .complited__container .complited__title {
@@ -613,7 +614,7 @@
 .complited .complited__container .complited__list .complited__item img {
   width: 100%;
   max-height: 275px;
-  border-bottom: 10px solid #F6C90E;
+  border-bottom: 10px solid #f6c90e;
   transition: all 0.5s;
 }
 .complited .complited__container .complited__list .complited__item:hover img {

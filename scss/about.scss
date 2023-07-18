@@ -18,50 +18,50 @@
     @include xl {
       flex-direction: row;
     }
-      justify-content: center;
-      align-items: center;
-      .about__content-container {
+    justify-content: center;
+    align-items: center;
+    .about__content-container {
+      @include xs {
+        width: 100%;
+      }
+      @include sm {
+        width: 100%;
+      }
+      @include xl {
+        width: 60%;
+      }
+      .about__title {
+        @include title;
+        color: $white-color;
+      }
+      .about__content {
+        color: $white-color;
+        padding: 0 40px 20px;
         @include xs {
-          width: 100%;
+          padding: 20px;
         }
         @include sm {
-          width: 100%;
-        }
-        @include xl {
-          width: 60%;
-        }
-        .about__title {
-          @include title;
-          color: $white-color;
-        }
-        .about__content {
-          color: $white-color;
-          padding:0 40px 20px;
-          @include xs {
-            padding: 20px;
-          }
-          @include sm {
-            padding:0 40px 20px;
-          }
+          padding: 0 40px 20px;
         }
       }
-      .about__img-container {
-        @include xs {
-          width: 100%;
-          min-height: 200px;
-        }
-        @include sm {
-          width: 100%;
+    }
+    .about__img-container {
+      @include xs {
+        width: 100%;
+        min-height: 200px;
+      }
+      @include sm {
+        width: 100%;
         min-height: 350px;
-        }
-        @include xl {
-          width: 40%;
-        min-height: 450px;
-        }
-        background-image: url("../img/factory.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 30%;
-        background-size: cover;
       }
+      @include xl {
+        width: 40%;
+        min-height: 450px;
+      }
+      background-image: url("../img/factory.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 30%;
+      background-size: cover;
+    }
   }
 }

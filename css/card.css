@@ -3,6 +3,7 @@
   justify-content: center;
   background-color: #303841;
   padding: 40px 0;
+  padding: 0;
 }
 @media (max-width: 575px) {
   .cards {
@@ -24,11 +25,178 @@
     height: auto;
   }
 }
+@media (max-width: 575px) {
+  .cards {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 576px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+.cards .cards__header-bg {
+  padding-top: 40px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.cards .cards__header-bg .cards__title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #f7f7f7;
+  margin: 0 5px 30px;
+  text-align: center;
+  color: #303841;
+}
+@media (min-width: 576px) {
+  .cards .cards__header-bg .cards__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .cards .cards__header-bg .cards__title {
+    font-size: 28px;
+  }
+}
+.cards .cards__header-bg .cards__header-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (max-width: 575px) {
+  .cards .cards__header-bg .cards__header-container {
+    min-width: 320px;
+  }
+}
+@media (min-width: 576px) {
+  .cards .cards__header-bg .cards__header-container {
+    max-width: 559px;
+  }
+}
+@media (min-width: 768px) {
+  .cards .cards__header-bg .cards__header-container {
+    max-width: 767px;
+  }
+}
+@media (min-width: 992px) {
+  .cards .cards__header-bg .cards__header-container {
+    max-width: 991px;
+  }
+}
+@media (min-width: 1200px) {
+  .cards .cards__header-bg .cards__header-container {
+    max-width: 1200px;
+  }
+}
+.cards .cards__header-bg .cards__header-container .cards__header {
+  display: flex;
+  padding-bottom: 10px;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .cards .cards__header-bg .cards__header-container .cards__header {
+    flex-direction: row;
+  }
+}
+.cards .cards__header-bg .cards__header-container .cards__header .cards__content {
+  color: #303841;
+  padding-bottom: 10px;
+}
+@media (max-width: 575px) {
+  .cards .cards__header-bg .cards__header-container .cards__header .cards__content {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) {
+  .cards .cards__header-bg .cards__header-container .cards__header .cards__content {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .cards .cards__header-bg .cards__header-container .cards__header .cards__content {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .cards .cards__header-bg .cards__header-container .cards__header .cards__content {
+    font-size: 20px;
+  }
+}
+.cards .cards__header-bg .cards__header-container .cards__header .cards__header-image {
+  width: 40%;
+  margin: 0 auto;
+}
+@media (max-width: 575px) {
+  .cards .cards__header-bg .cards__header-container .cards__header .cards__header-image {
+    width: 90%;
+  }
+}
+@media (min-width: 576px) {
+  .cards .cards__header-bg .cards__header-container .cards__header .cards__header-image {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .cards .cards__header-bg .cards__header-container .cards__header .cards__header-image {
+    width: 40%;
+  }
+}
+.cards .cards__header-bg .cards__header-container .cards__header .cards__header-image img {
+  width: 100%;
+}
+.cards .cards__header-bg .cards__header-container .card__characteristics {
+  margin-bottom: 20px;
+}
+.cards .cards__header-bg .cards__header-container .card__characteristics .card__characteristics-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f7f7f7;
+  margin: 0 5px 15px;
+  text-align: center;
+  color: #303841;
+}
+@media (min-width: 576px) {
+  .cards .cards__header-bg .cards__header-container .card__characteristics .card__characteristics-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .cards .cards__header-bg .cards__header-container .card__characteristics .card__characteristics-title {
+    font-size: 28px;
+  }
+}
+.cards .cards__header-bg .cards__header-container .card__characteristics .card__characteristics-content {
+  text-align: center;
+  list-style: none;
+}
+.cards .cards__header-bg .cards__header-container .card__characteristics .card__characteristics-item .card__characteristics-item-title {
+  color: #303841;
+  padding: 0 10px;
+}
+.cards .cards__header-bg .cards__header-container .card__characteristics .card__characteristics-item .card__characteristics-item-content {
+  color: #303841;
+  padding: 0 10px;
+}
+.cards .cards__header-bg hr {
+  height: 2px;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  background-color: #f6c90e;
+}
+@media (min-width: 576px) {
+  .cards .cards__header-bg hr {
+    width: 100%;
+  }
+}
 .cards .cards__container {
   display: flex;
   width: 100%;
   padding: 10px;
-  flex-direction: column;
 }
 @media (max-width: 575px) {
   .cards .cards__container {
@@ -55,60 +223,6 @@
     max-width: 1200px;
   }
 }
-.cards .cards__container .cards__title {
-  color: #F7F7F7;
-  font-size: 50px;
-  font-weight: bold;
-  color: #F7F7F7;
-  margin: 0 5px 30px;
-  text-align: center;
-}
-@media (min-width: 576px) {
-  .cards .cards__container .cards__title {
-    font-size: 28px;
-  }
-}
-@media (max-width: 575px) {
-  .cards .cards__container .cards__title {
-    font-size: 28px;
-  }
-}
-.cards .cards__container .cards__content {
-  color: #F7F7F7;
-  padding-bottom: 10px;
-}
-.cards .cards__container .card__characteristics {
-  margin-bottom: 20px;
-}
-.cards .cards__container .card__characteristics .card__characteristics-title {
-  font-size: 28px;
-  font-weight: bold;
-  color: #F7F7F7;
-  margin: 0 5px 15px;
-  text-align: center;
-  color: #F6C90E;
-}
-@media (min-width: 576px) {
-  .cards .cards__container .card__characteristics .card__characteristics-title {
-    font-size: 20px;
-  }
-}
-@media (max-width: 575px) {
-  .cards .cards__container .card__characteristics .card__characteristics-title {
-    font-size: 28px;
-  }
-}
-.cards .cards__container .card__characteristics .card__characteristics-content {
-  text-align: center;
-}
-.cards .cards__container .card__characteristics .card__characteristics-item .card__characteristics-item-title {
-  color: #F7F7F7;
-  padding: 0 10px;
-}
-.cards .cards__container .card__characteristics .card__characteristics-item .card__characteristics-item-content {
-  color: #F7F7F7;
-  padding: 0 10px;
-}
 .cards .cards__container .cards__list {
   display: flex;
   flex-wrap: wrap;
@@ -130,10 +244,10 @@
   }
 }
 .cards .cards__container .cards__list .card .card__image {
-  width: 159px;
-  height: 300px;
+  min-width: 159px;
+  min-height: 300px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   margin: 0 auto;
 }
@@ -142,24 +256,24 @@
   flex-direction: column;
 }
 .cards .cards__container .cards__list .card .card__content .card__content-title {
-  color: #F6C90E;
+  color: #f6c90e;
   padding: 0 10px;
 }
 .cards .cards__container .cards__list .card .card__content .card__description .card__description-title {
-  color: #F7F7F7;
+  color: #f7f7f7;
   padding: 0 10px;
 }
 .cards .cards__container .cards__list .card .card__content .card__description .card__description-content {
-  color: #F7F7F7;
+  color: #f7f7f7;
   padding: 0 10px;
 }
 .cards .cards__container .cards__list .card .card__content .card__description .card__description-configuration .card__description-configuration-item {
-  color: #F7F7F7;
+  color: #f7f7f7;
   padding: 0 10px;
   list-style: inside;
 }
 .cards .cards__container .cards__list .card .card__content .card__description .card__description-prices {
-  color: #F7F7F7;
+  color: #f7f7f7;
   font-weight: 700;
   padding: 0 10px;
 }
@@ -183,4 +297,32 @@
 
 .card__image-2 {
   background-image: url("../img/metal/stelazh-konditerskij.jpg");
+}
+
+.card__image-3 {
+  background-image: url("../img/metal/stelazh-hlibnij.jpg");
+}
+
+.card__image-4 {
+  background-image: url("../img/metal/stelazh-perforovanij.jpg");
+}
+
+.card__image-5 {
+  background-image: url("../img/metal/stelazh-2.jpg");
+}
+
+.card__image-6 {
+  background-image: url("../img/metal/ostriv.jpg");
+}
+
+.card__image-7 {
+  background-image: url("../img/loft/Stelazh-dlya-odyagu-pristinnij1.jpg");
+}
+
+.card__image-8 {
+  background-image: url("../img/loft/Stelazh-dlya-odyagu-pristinnij.jpg");
+}
+
+.card__image-9 {
+  background-image: url("../img/loft/Stelazh-dlya-odyagu-pristinnij2.jpg");
 }/*# sourceMappingURL=card.css.map */

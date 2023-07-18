@@ -55,10 +55,10 @@
 .complited .complited__container .complited__title {
   font-size: 50px;
   font-weight: bold;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0 5px 30px;
   text-align: center;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 @media (min-width: 576px) {
   .complited .complited__container .complited__title {
@@ -81,10 +81,15 @@
 .complited .complited__container .complited__list .complited__item {
   width: 350px;
 }
+@media (max-width: 575px) {
+  .complited .complited__container .complited__list .complited__item {
+    margin: 0 10px;
+  }
+}
 .complited .complited__container .complited__list .complited__item img {
   width: 100%;
   max-height: 275px;
-  border-bottom: 10px solid #F6C90E;
+  border-bottom: 10px solid #f6c90e;
   transition: all 0.5s;
 }
 .complited .complited__container .complited__list .complited__item:hover img {

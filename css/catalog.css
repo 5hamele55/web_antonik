@@ -1,5 +1,5 @@
 strong {
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 
 .racks {
@@ -66,7 +66,7 @@ strong {
 .racks .racks__info-container .racks__title {
   font-size: 50px;
   font-weight: bold;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0 5px 30px;
   text-align: center;
 }
@@ -81,7 +81,7 @@ strong {
   }
 }
 .racks .racks__info-container .racks__content {
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 .racks .racks__container {
   display: flex;
@@ -130,7 +130,7 @@ strong {
   z-index: 0;
 }
 .racks .racks__container .racks__list .racks__item .racks__item-title, .racks .racks__container .racks__list .racks__item .racks__item-text {
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 .racks .racks__container .racks__list .racks__item .racks__item-title {
   position: relative;
@@ -142,11 +142,11 @@ strong {
   display: block;
   width: 40px;
   height: 3px;
-  background-color: #F6C90E;
+  background-color: #f6c90e;
   position: absolute;
   top: 10px;
   left: -50px;
 }
 .racks .racks__container .racks__list .racks__item:hover .racks__item-title {
-  color: #F6C90E;
+  color: #f6c90e;
 }/*# sourceMappingURL=catalog.css.map */

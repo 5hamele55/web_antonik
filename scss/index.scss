@@ -48,17 +48,19 @@
         filter: brightness(80%);
       }
     }
-    .hero__about{
+    .hero__about {
       @include xs {
         padding: 10px;
         position: static;
-        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../img/Stelazhi-metalevi.jpg") no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("../img/Stelazhi-metalevi.jpg") no-repeat;
         background-size: cover;
       }
       @include sm {
         padding: 40px;
         position: static;
-        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../img/Stelazhi-metalevi.jpg") no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("../img/Stelazhi-metalevi.jpg") no-repeat;
         background-size: cover;
       }
       @include lg {
@@ -91,7 +93,7 @@
         font-weight: 700;
         position: relative;
         &::before {
-          @include dash
+          @include dash;
         }
       }
       .hero__content {
@@ -116,11 +118,11 @@
 .benefits {
   @include section($white-color);
   height: 100vh;
-  .benefits__container{
+  .benefits__container {
     @include container;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .benefits__title {
       @include title;
       color: $main-color;
@@ -170,7 +172,6 @@
       }
     }
   }
-  
 }
 .racks {
   @include section($main-color);
@@ -199,7 +200,8 @@
             z-index: 0;
           }
         }
-        .racks__item-title, .racks__item-text {
+        .racks__item-title,
+        .racks__item-text {
           color: $white-color;
         }
         .racks__item-title {
@@ -226,7 +228,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .working-with__title{
+    .working-with__title {
       @include title;
       color: $main-color;
     }
@@ -238,10 +240,11 @@
       flex-wrap: wrap;
       .working-with__list-item {
         list-style: none;
-        
+
         @include xs {
           width: 200px;
-        }@include sm {
+        }
+        @include sm {
           width: 200px;
         }
         @include xl {
