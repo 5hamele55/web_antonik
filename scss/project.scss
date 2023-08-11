@@ -1,43 +1,64 @@
 @import "breakpoints";
 @import "variables";
 
-.complited {
+.project {
   display: flex;
   justify-content: center;
   background-color: $main-color;
   padding: 40px 0;
-  .complited__container {
+  .project__container {
     @include container;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .complited__title {
+    .project__title {
       @include title;
       color: $white-color;
     }
-    .complited__list {
+    .project__list {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       list-style: none;
       justify-content: space-around;
       align-items: center;
-      .complited__item {
+      .project__item {
         width: 300px;
         height: 235px;
         @include xs {
-          margin: 0 10px;
+          margin: 10px;
         }
-        .complited__item-img {
+        .project__item-img {
           width: 100%;
           height: 100%;
-          border-bottom: 10px solid $acsent-color;
-        }
-        &:hover img {
-          border-bottom: 10px solid transparent;
-          transition: all 0.5s;
+          cursor: zoom-in;
         }
       }
     }
+  }
+}
+
+.zoomed-img-bg {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+.zoom {
+  z-index: 999;
+  width: 50vw;
+  height: auto;
+  max-height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  cursor: zoom-out;
+  @include xs {
+    width: 90vw;
   }
 }

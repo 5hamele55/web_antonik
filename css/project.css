@@ -1,0 +1,106 @@
+.project {
+  display: flex;
+  justify-content: center;
+  background-color: #303841;
+  padding: 40px 0;
+}
+.project .project__container {
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 575px) {
+  .project .project__container {
+    min-width: 320px;
+  }
+}
+@media (min-width: 576px) {
+  .project .project__container {
+    max-width: 559px;
+  }
+}
+@media (min-width: 768px) {
+  .project .project__container {
+    max-width: 767px;
+  }
+}
+@media (min-width: 992px) {
+  .project .project__container {
+    max-width: 991px;
+  }
+}
+@media (min-width: 1200px) {
+  .project .project__container {
+    max-width: 1200px;
+  }
+}
+.project .project__container .project__title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #f7f7f7;
+  margin: 0 5px 30px;
+  text-align: center;
+  color: #f7f7f7;
+}
+@media (min-width: 576px) {
+  .project .project__container .project__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .project .project__container .project__title {
+    font-size: 28px;
+  }
+}
+.project .project__container .project__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.project .project__container .project__list .project__item {
+  width: 300px;
+  height: 235px;
+}
+@media (max-width: 575px) {
+  .project .project__container .project__list .project__item {
+    margin: 10px;
+  }
+}
+.project .project__container .project__list .project__item .project__item-img {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+
+.zoomed-img-bg {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.zoom {
+  z-index: 999;
+  width: 50vw;
+  height: auto;
+  max-height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  cursor: zoom-out;
+}
+@media (max-width: 575px) {
+  .zoom {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=project.css.map */
