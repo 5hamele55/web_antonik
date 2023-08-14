@@ -119,7 +119,7 @@
   }
 }
 .about .about__container .about__img-container {
-  background-image: url("../img/factory.jpg");
+  background-image: url("../img/factory.webp");
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;

@@ -53,14 +53,14 @@
         padding: 10px;
         position: static;
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          url("../img/Stelazhi-metalevi.jpg") no-repeat;
+          url("../img/Stelazhi-metalevi.webp") no-repeat;
         background-size: cover;
       }
       @include sm {
         padding: 40px;
         position: static;
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          url("../img/Stelazhi-metalevi.jpg") no-repeat;
+          url("../img/Stelazhi-metalevi.webp") no-repeat;
         background-size: cover;
       }
       @include lg {

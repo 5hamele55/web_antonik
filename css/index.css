@@ -110,7 +110,7 @@
   .hero .hero__container .hero__about {
     padding: 10px;
     position: static;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Stelazhi-metalevi.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Stelazhi-metalevi.webp") no-repeat;
     background-size: cover;
   }
 }
@@ -118,7 +118,7 @@
   .hero .hero__container .hero__about {
     padding: 40px;
     position: static;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Stelazhi-metalevi.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Stelazhi-metalevi.webp") no-repeat;
     background-size: cover;
   }
 }
