@@ -22,15 +22,22 @@
       list-style: none;
       justify-content: space-around;
       align-items: center;
+      gap: 30px;
       .project__item {
         width: 300px;
-        height: 235px;
+        height: 225px;
+        overflow: hidden;
         @include xs {
           margin: 10px;
         }
+        transition: border-bottom 0.3s;
+        border-bottom: 10px solid $acsent-color;
+        &:hover {
+          border-bottom: 10px solid transparent;
+        }
         .project__item-img {
           width: 100%;
-          height: 100%;
+          height: auto;
           cursor: zoom-in;
         }
       }
@@ -49,14 +56,14 @@
 }
 .zoom {
   z-index: 999;
-  width: 50vw;
+  max-width: 50vw;
   height: auto;
   max-height: 90vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s;
+  transition: all 0.3s;
   cursor: zoom-out;
   @include xs {
     width: 90vw;
